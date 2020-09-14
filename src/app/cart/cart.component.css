@@ -1,0 +1,181 @@
+.total {
+	border: 4px gray solid;
+	font-size: x-large;
+}
+#placeorder {
+	float: left;
+}
+/*#placeorder button {
+	font-size: xx-large;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all 0.4s ease 0s;
+}
+#placeorder button:hover {
+	background: #434343;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}*/
+#placeorder button {
+	background-color:#4b3f39;
+	font-family: 'Open Sans', sans-serif;
+	font-size:24px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:10px 20px;
+	padding-right:50px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #9e8d84, 0px 5px 0px 0px #322620, 0px 10px 5px #999;
+}
+
+#placeorder button:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+	box-shadow: inset 0px 1px 0px #9e8d84, 0px 2px 0px 0px #322620, 0px 5px 3px #999;
+}
+
+#placeorder button::before {
+	background-color:#322620;
+	/*background-image:url("https://toppng.com/uploads/preview/free-right-arrow-symbol-png-vector-arrow-right-vector-115632158025eetnpo2gn.png");*/
+	background-repeat:no-repeat;
+	background-position:center center;
+	content:"";
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:15px;
+	top:50%;
+	margin-top:-9px;
+	border-radius: 50%;
+	box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #827066;
+}
+
+#placeorder button:active::before {
+	top:50%;
+	margin-top:-12px;
+	box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #382e29;
+}
+
+/* Checkout Cart, Shipping Prices */
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  
+  border-radius: 2px;
+  background-color: #EEEEEE;
+}
+
+.cart-item span {
+  font-weight: 900;
+}
+
+.removeItem:hover {
+	cursor: pointer;
+}
+/* Media queries (widths)*/
+/*
+
+    320px
+    480px
+    600px
+    768px
+    900px
+    1024px
+    1200px
+
+*/
+@media screen and (max-width: 2000px) {
+	.cart-item {
+		width: 450px;
+		margin: 0px 0px 8px 0px; /* margin: [top] [right] [bottom] [left]; */
+	}
+	#placeorder {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	#cart-list {
+		float: left;
+		margin-right: 40px;
+		/*margin: 0 auto; Dont center the list in the media query*/ 
+  	}
+}
+@media screen and (max-width: 1024px) {
+	.cart-item {
+		width: 450px;
+		margin: 0px 0px 8px 0px; /* margin: [top] [right] [bottom] [left]; */
+	}
+	#placeorder {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	#cart-list {
+		float: left;
+		margin-right: 40px;
+		/*margin: 0 auto; Dont center the list in the media query*/ 
+  	}
+}
+@media screen and (max-width: 900px) {
+	.cart-item {
+		width: 450px;
+		margin: 0px 0px 8px 0px; /* margin: [top] [right] [bottom] [left]; */
+	}
+	#placeorder {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	#cart-list {
+		float: left;
+		margin-right: 40px;
+		/*margin: 0 auto; Dont center the list in the media query*/ 
+  	}
+}
+@media screen and (max-width: 768px) {
+	.cart-item {
+		width: 450px;
+		margin: 0px 0px 8px 0px; /* margin: [top] [right] [bottom] [left]; */
+	}
+	#placeorder {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	#cart-list {
+		float: left;
+		margin-right: 20px;
+		/*margin: 0 auto; Dont center the list in the media query*/ 
+  	}
+}
+@media screen and (max-width: 600px) {
+	.cart-item {
+		width: 450px;
+		margin: 0px 0px 8px 0px; /* margin: [top] [right] [bottom] [left]; */
+	}
+	#placeorder {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	#cart-list {
+		/*margin-right: 10px;*/
+		/*margin: 0 auto; Dont center the list in the media query*/ 
+  	}
+}
+
+@media screen and (max-width: 480px) {
+  .cart-item {
+  	max-width: 100%;
+  	min-width: 85%;
+  	margin: 0px auto 8px auto; /* margin: [top] [right] [bottom] [left]; */
+  }
+  #placeorder {
+  	margin-left: 0px;
+  	margin-top: 20px;
+  }
+  #cart-list {
+	margin: 0 auto;
+  }
+}

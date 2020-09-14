@@ -1,0 +1,31 @@
+button {
+  margin-right: 5px;
+}
+.cook {
+  margin-top: 0px;
+  font-style: oblique;
+  color: #44c1e7;
+}
+.product-title {
+  margin-bottom: 0px;
+  color: #1976d2;
+}
+.item {
+  background-color: #eee;
+  padding-left: 20px;
+  padding-top: 5px;
+  width: 400px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  float: left;
+}
+.product-list {
+  overflow: hidden;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

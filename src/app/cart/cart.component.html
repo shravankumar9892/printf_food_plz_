@@ -1,0 +1,44 @@
+<h1>Cart items</h1>
+
+<!-- Individual items in the cart -->
+<div id="cart-list">
+  <div class="cart-item total">
+    <span>Total:</span>
+    <span>{{totalsum | currency:'INR'}}</span>
+  </div>
+
+  <div class="cart-item" *ngFor="let item of items; let i=index" [attr.data-index]="i" id="{{i}}">
+    <div>
+      <span style="margin-right: 5px;font-size: large;">{{item.price | currency:'INR'}}</span>
+      <span>{{item.name}} (× 1)</span>
+    </div>
+    <span class="removeItem" (click)="removeItem(i)"><i class="material-icons">cancel</i></span>
+  </div>
+</div>
+<div id="placeorder">
+  <button (click)="onSubmit()">Place Order</button>
+</div>
+
+<!-- <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <div>
+    <label for="phone">
+      Phone no.
+    </label>
+    <input id="phone" type="text" formControlName="phone">
+  </div>
+  <button class="button" type="submit">Place Order</button>
+</form> -->
